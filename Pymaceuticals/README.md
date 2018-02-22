@@ -329,6 +329,7 @@ plt.ylabel('Tumor Volume (mm3)')
 plt.xlim(0,Timepoint.max())
 plt.ylim(20,80)
 plt.grid()
+plt.show()
 ```
 
 
@@ -560,6 +561,7 @@ plt.ylabel('Metastatic Sites')
 plt.xlim(0,Duration.max())
 plt.ylim(0,4)
 plt.grid()
+plt.show()
 ```
 
 
@@ -972,6 +974,7 @@ plt.ylabel('Survival Rate (%)')
 plt.xlim(0,Time.max())
 plt.ylim(20,102)
 plt.grid()
+plt.show()
 ```
 
 
@@ -1082,6 +1085,7 @@ for p in ax.patches:
     ax.annotate(s="{:.0f}%".format(p.get_height()), xy=((p.get_x() + p.get_width() / 2., p.get_height()*.9)),
                 ha='center', va='center', color='white', xytext=(0, 5), 
                 textcoords='offset points', weight='bold')  
+plt.show()
 ```
 
 
